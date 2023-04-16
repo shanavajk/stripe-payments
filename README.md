@@ -29,11 +29,15 @@
 
 
         Set up some environment variables. Create a .env file and add the Secret Key.
-        ``SECRET_KEY="<STRIPE_SECRET_KEY>
+        ```
+        SECRET_KEY="<STRIPE_SECRET_KEY>
+        ```
 
     ## Client-Side Configuration
-        ``REACT_APP_STRIPE_PUBLIC_API_KEY=<STRIPE_PUBLISHABLE_KEY>
-        ``REACT_APP_SERVER_URL="<SERVER_API_ENDPOINT>" (To make payment api calls)
+        ```
+        REACT_APP_STRIPE_PUBLIC_API_KEY=<STRIPE_PUBLISHABLE_KEY>
+        REACT_APP_SERVER_URL="<SERVER_API_ENDPOINT>" (To make payment api calls)
+        ```
 
 # Usage
 
