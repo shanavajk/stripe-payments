@@ -1,6 +1,6 @@
 # Stripe Payment App
 
-This is a sample payment gateway integration full-stack web app. The app includes a client-side built with React and a server-side built with Node.js and Express & APIs for making payments to Stripe.
+This is a sample payment gateway integration app. The app includes a client-side built with React and a server-side built with Node.js and Express & APIs for making payments to Stripe Payment Gateway.
 
 # Features
 
