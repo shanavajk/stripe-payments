@@ -1,8 +1,8 @@
 import React from "react";
 import { render, waitFor, screen } from "@testing-library/react";
 import { ChakraProvider } from "@chakra-ui/react";
-import { listPayments } from "./services/stripe";
-import App from "./App";
+import { listPayments } from "../services/stripe";
+import App from "../App";
 import { jest, describe, beforeEach, test, expect } from "@jest/globals";
 
 jest.mock("./services/stripe"); // Mock the listPayments function
