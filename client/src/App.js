@@ -1,6 +1,6 @@
 import "./css/App.css";
 import React, { useEffect, useState } from "react";
-import { ChakraProvider, Container, useDisclosure, Box } from "@chakra-ui/react";
+import { ChakraProvider, Container, useDisclosure } from "@chakra-ui/react";
 import Header from "./components/Header";
 
 import StripeContainer from "./components/StripeContainer";
@@ -22,22 +22,12 @@ function App() {
 
     return (
         <ChakraProvider>
-            <Box
-                size="xl"
-                w="100%"
-                maxWidth="1036px"
-                padding={8}
-                border="1px solid"
-                borderColor="gray.100"
-                borderRadius="md"
-            >
-                <Container>
-                    <Header onOpen={onOpen} />
-                    <br />
-                    <Transactions payments={payments} />
-                    <StripeContainer getPayments={getPayments} isOpen={isOpen} onClose={onClose} />
-                </Container>
-            </Box>
+            <Container size="xl" w="100%" maxWidth="1036px" padding={8}>
+                <Header onOpen={onOpen} />
+                <br />
+                <Transactions payments={payments} />
+                <StripeContainer getPayments={getPayments} isOpen={isOpen} onClose={onClose} />
+            </Container>
         </ChakraProvider>
     );
 }
