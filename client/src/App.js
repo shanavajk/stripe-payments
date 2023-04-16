@@ -1,4 +1,4 @@
-import "./App.css";
+import "./css/App.css";
 import React, { useEffect, useState } from "react";
 import { ChakraProvider, Container, useDisclosure } from "@chakra-ui/react";
 import Header from "./components/Header";
