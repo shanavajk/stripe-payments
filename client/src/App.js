@@ -22,8 +22,16 @@ function App() {
 
     return (
         <ChakraProvider>
-            <Box border="1px solid" borderColor="gray.100" borderRadius="md">
-                <Container size="xl" w="100%" maxWidth="1036px" padding={8}>
+            <Box
+                size="xl"
+                w="100%"
+                maxWidth="1036px"
+                padding={8}
+                border="1px solid"
+                borderColor="gray.100"
+                borderRadius="md"
+            >
+                <Container>
                     <Header onOpen={onOpen} />
                     <br />
                     <Transactions payments={payments} />
