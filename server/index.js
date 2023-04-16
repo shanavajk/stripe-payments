@@ -12,7 +12,7 @@ app.use(cors());
 
 //Payment Routes (Normally I create route file and read the parameters/ form data and pass it to Service (Model Code) where all business logic is handled. This ensures that controller are light and all my business logic is separated)
 
-app.post("/payment", cors(), async (req, res, next) => {
+app.post("/api/payment", cors(), async (req, res, next) => {
     let { amount, id, email, name } = req.body;
     try {
         const payment = await stripe.paymentIntents.create({
@@ -42,7 +42,7 @@ app.post("/payment", cors(), async (req, res, next) => {
     }
 });
 
-app.get("/payments", cors(), async (req, res, next) => {
+app.get("/api/payments", cors(), async (req, res, next) => {
     try {
         const payments = await stripe.paymentIntents.list();
         res.json({
