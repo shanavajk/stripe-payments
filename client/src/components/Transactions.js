@@ -29,7 +29,7 @@ export default function Transactions({ payments }) {
                                   <Tr key={key}>
                                       <Td>{item.metadata?.name}</Td>
                                       <Td>{item.metadata?.email}</Td>
-                                      <Td>{item.currency.toUpperCase()}</Td>
+                                      <Td>{item.currency?.toUpperCase()}</Td>
                                       <Td>{item.amount}</Td>
                                       <Td alignContent="center">
                                           {item.status == "succeeded"
