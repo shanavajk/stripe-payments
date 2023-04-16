@@ -58,9 +58,9 @@ To start the server-side development server, run node index.js in the server dir
 
 # Hosting
 
-    This app is hosted on vercel.com.
+This app is hosted on vercel.com.
 
-    https://stripe-payments-client-shanavajk.vercel.app/
+https://stripe-payments-client-shanavajk.vercel.app/
 
 ## Server-Side Hosting Configuration for deployment.
 
