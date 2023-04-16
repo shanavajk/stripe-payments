@@ -64,7 +64,7 @@ https://stripe-payments-client-shanavajk.vercel.app/
 
 ## Server-Side Hosting Configuration for deployment.
 
-Create vercel.json and add the below json configuration.
+Create vercel.json in server folder and add the below json configuration.
 
 ```json
 {
