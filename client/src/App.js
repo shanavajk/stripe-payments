@@ -9,7 +9,7 @@ import { listPayments } from "./services/stripe";
 
 function App() {
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const [payments, setPayments] = useState(null);
+    const [payments, setPayments] = useState([]);
 
     useEffect(() => {
         getPayments();
